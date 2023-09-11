@@ -1,0 +1,38 @@
+<tracker>:
+
+   word_counter: word_counter
+   start_stop: start_stop   
+
+   Label:
+      font_size: 35
+      center_x: root.width / 2
+      top: root.top - 25
+      text: "Welcome to WordTracker!"
+      font_name: "Cour"
+   Label:
+      font_size: 26
+      center_x: root.width / 2
+      top: root.top - 65
+      text: "Your current word count is"
+      font_name: "Cour"
+      
+   Label:
+      id: word_counter
+      font_size: 150
+      center_x: root.width / 2
+      top: root.height*.65
+      text: '0'
+      font_name: "Cour"
+
+   ToggleButton:
+      id: start_stop
+      font_size: 22
+      text: "Start"
+      background_normal: ''
+      background_down: ''
+      background_color: (0,204/255, 0, 1)
+      font_name: "Cour"
+      center_x: root.width / 2
+      top: root.height*.25
+      state: 'normal'
+      on_press: root.toggle()
